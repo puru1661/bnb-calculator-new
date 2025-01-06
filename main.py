@@ -9,12 +9,12 @@ import plotly.express as px
 import numpy as np
 from joblib import dump, load
 import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+#from oauth2client.service_account import ServiceAccountCredentials
 
 # Use creds to create a client to interact with the Google Drive API
-scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('creds.json', scope)
-client = gspread.authorize(creds)
+# scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
+# creds = ServiceAccountCredentials.from_json_keyfile_name('creds.json', scope)
+# client = gspread.authorize(creds)
 
 # locs = pd.read_csv('locations.csv')
 # abb = pd.read_csv('abb.csv')
