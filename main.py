@@ -30,7 +30,7 @@ with col1:
     #st.image("bnb.png",width=100)
 
 with col2:
-    st.title("Airbnb Calculator for Dubai")
+    st.title("Airbnb Calculator")
 
 
 if 'beds' not in st.session_state:
@@ -275,10 +275,10 @@ def get_rev_data(lat,lng,beds,baths):
 
 with st.form(key='property_form'):
     # Create a selectbox for the number of beds
-    beds = st.selectbox('Select number of beds:', options=[0, 1, 2, 3, 4,5 ,6])
+    beds = st.selectbox('Select number of beds:', options=[0, 1, 2, 3, 4,5 ,6,7,8])
 
     # Create a selectbox for the number of baths
-    baths = st.selectbox('Select number of baths:', options=[1, 2, 3, 4, 5,6])
+    baths = st.selectbox('Select number of baths:', options=[1, 2, 3, 4, 5,6,7,8])
 
     currency = st.selectbox("select currency:", options=["AED","USD"])
 
