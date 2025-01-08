@@ -58,10 +58,12 @@ if 'occupancy' not in st.session_state:
 option = st.text_input("Enter the Co-ordinates")
 
 
-option = option.split(",")
-lat = option[0]
-lng = option[1]
-st.write(lat,lng)
+
+if option:
+    option = option.split(",")
+    lat = option[0]
+    lng = option[1]
+    st.write(lat,lng)
 
 #model = load('calculator.joblib')
 
